@@ -3736,3 +3736,1083 @@ NameError: name 'tasks' is not defined
 [2024-06-01T14:20:24.279+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:20:24.279+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-01T14:20:24.302+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:20:24.302+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
 [2024-06-01T14:20:24.328+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.101 seconds
+[2024-06-01T14:20:54.371+0000] {processor.py:161} INFO - Started process (PID=200) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:20:54.372+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:20:54.374+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:20:54.373+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:20:54.390+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:20:54.422+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:20:54.422+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T14:20:54.446+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:20:54.445+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T14:20:54.463+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.097 seconds
+[2024-06-01T14:21:24.603+0000] {processor.py:161} INFO - Started process (PID=207) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:21:24.604+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:21:24.606+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:21:24.605+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:21:24.626+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:21:24.650+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:21:24.649+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T14:21:24.675+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:21:24.675+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T14:21:24.694+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.096 seconds
+[2024-06-01T14:21:54.751+0000] {processor.py:161} INFO - Started process (PID=214) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:21:54.752+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:21:54.754+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:21:54.754+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:21:54.772+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:21:54.794+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:21:54.794+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T14:21:54.814+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:21:54.814+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T14:21:54.830+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.086 seconds
+[2024-06-01T14:22:24.961+0000] {processor.py:161} INFO - Started process (PID=221) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:22:24.962+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:22:24.964+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:22:24.964+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:22:24.981+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:22:25.004+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:22:25.004+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T14:22:25.027+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:22:25.027+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T14:22:25.045+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.088 seconds
+[2024-06-01T14:22:50.087+0000] {processor.py:161} INFO - Started process (PID=228) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:22:50.088+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:22:50.091+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:22:50.090+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:22:50.103+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:22:50.102+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def 
+        ^
+SyntaxError: invalid syntax
+[2024-06-01T14:22:50.104+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:22:50.124+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.043 seconds
+[2024-06-01T14:22:55.116+0000] {processor.py:161} INFO - Started process (PID=229) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:22:55.117+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:22:55.118+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:22:55.118+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:22:55.130+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:22:55.129+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data
+                        ^
+SyntaxError: expected '('
+[2024-06-01T14:22:55.130+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:22:55.147+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.037 seconds
+[2024-06-01T14:23:08.192+0000] {processor.py:161} INFO - Started process (PID=230) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:23:08.193+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:23:08.196+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:23:08.195+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:23:08.211+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:23:08.209+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data()
+                          ^
+SyntaxError: expected ':'
+[2024-06-01T14:23:08.212+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:23:08.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.085 seconds
+[2024-06-01T14:23:38.370+0000] {processor.py:161} INFO - Started process (PID=237) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:23:38.371+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:23:38.375+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:23:38.374+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:23:38.392+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:23:38.390+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data()
+                          ^
+SyntaxError: expected ':'
+[2024-06-01T14:23:38.394+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:23:38.423+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.063 seconds
+[2024-06-01T14:24:08.636+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:24:08.638+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:24:08.639+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:24:08.639+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:24:08.653+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:24:08.651+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data()
+                          ^
+SyntaxError: expected ':'
+[2024-06-01T14:24:08.653+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:24:08.672+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.044 seconds
+[2024-06-01T14:24:38.780+0000] {processor.py:161} INFO - Started process (PID=251) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:24:38.781+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:24:38.782+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:24:38.781+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:24:38.793+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:24:38.792+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data()
+                          ^
+SyntaxError: expected ':'
+[2024-06-01T14:24:38.793+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:24:38.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.034 seconds
+[2024-06-01T14:25:08.941+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:25:08.942+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:25:08.943+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:25:08.943+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:25:08.954+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:25:08.953+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data()
+                          ^
+SyntaxError: expected ':'
+[2024-06-01T14:25:08.955+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:25:08.969+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.034 seconds
+[2024-06-01T14:25:39.086+0000] {processor.py:161} INFO - Started process (PID=265) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:25:39.087+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:25:39.088+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:25:39.088+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:25:39.110+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:25:39.108+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data()
+                          ^
+SyntaxError: expected ':'
+[2024-06-01T14:25:39.110+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:25:39.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.048 seconds
+[2024-06-01T14:26:09.253+0000] {processor.py:161} INFO - Started process (PID=273) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:26:09.255+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:26:09.256+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:26:09.255+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:26:09.273+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:26:09.271+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data()
+                          ^
+SyntaxError: expected ':'
+[2024-06-01T14:26:09.274+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:26:09.295+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.049 seconds
+[2024-06-01T14:26:39.395+0000] {processor.py:161} INFO - Started process (PID=280) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:26:39.395+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:26:39.396+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:26:39.396+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:26:39.407+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:26:39.406+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data()
+                          ^
+SyntaxError: expected ':'
+[2024-06-01T14:26:39.408+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:26:39.423+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.035 seconds
+[2024-06-01T14:27:09.591+0000] {processor.py:161} INFO - Started process (PID=287) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:27:09.593+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:27:09.594+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:27:09.593+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:27:09.608+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:27:09.607+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data()
+                          ^
+SyntaxError: expected ':'
+[2024-06-01T14:27:09.609+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:27:09.629+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.046 seconds
+[2024-06-01T14:27:39.729+0000] {processor.py:161} INFO - Started process (PID=294) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:27:39.730+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:27:39.731+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:27:39.731+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:27:39.742+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:27:39.741+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data()
+                          ^
+SyntaxError: expected ':'
+[2024-06-01T14:27:39.743+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:27:39.758+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.034 seconds
+[2024-06-01T14:28:09.911+0000] {processor.py:161} INFO - Started process (PID=301) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:28:09.912+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:28:09.913+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:28:09.913+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:28:09.927+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:28:09.926+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data()
+                          ^
+SyntaxError: expected ':'
+[2024-06-01T14:28:09.928+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:28:09.946+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.041 seconds
+[2024-06-01T14:28:18.963+0000] {processor.py:161} INFO - Started process (PID=308) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:28:18.964+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T14:28:18.965+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:28:18.964+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:28:18.976+0000] {logging_mixin.py:188} INFO - [2024-06-01T14:28:18.975+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 20
+    def consolidate_data()
+                          ^
+SyntaxError: expected ':'
+[2024-06-01T14:28:18.976+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T14:28:18.992+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.035 seconds
+[2024-06-01T18:02:10.050+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:02:10.051+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:02:10.053+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:02:10.053+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:02:11.902+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:02:11.898+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55, in <module>
+    op_kwargs= t1.xcom_pull(task_ids='get_data')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseOperator.xcom_pull() missing 1 required positional argument: 'context'
+[2024-06-01T18:02:11.904+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:02:11.935+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 1.891 seconds
+[2024-06-01T18:02:42.106+0000] {processor.py:161} INFO - Started process (PID=38) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:02:42.107+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:02:42.109+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:02:42.109+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:02:42.481+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:02:42.477+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55, in <module>
+    op_kwargs= t1.xcom_pull(task_ids='get_data')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseOperator.xcom_pull() missing 1 required positional argument: 'context'
+[2024-06-01T18:02:42.482+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:02:42.495+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.396 seconds
+[2024-06-01T18:03:12.617+0000] {processor.py:161} INFO - Started process (PID=52) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:03:12.618+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:03:12.620+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:03:12.620+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:03:12.929+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:03:12.926+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55, in <module>
+    op_kwargs= t1.xcom_pull(task_ids='get_data')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseOperator.xcom_pull() missing 1 required positional argument: 'context'
+[2024-06-01T18:03:12.930+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:03:12.954+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.342 seconds
+[2024-06-01T18:03:43.112+0000] {processor.py:161} INFO - Started process (PID=60) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:03:43.113+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:03:43.115+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:03:43.115+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:03:43.503+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:03:43.500+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55, in <module>
+    op_kwargs= t1.xcom_pull(task_ids='get_data')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseOperator.xcom_pull() missing 1 required positional argument: 'context'
+[2024-06-01T18:03:43.504+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:03:43.516+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.409 seconds
+[2024-06-01T18:04:10.313+0000] {processor.py:161} INFO - Started process (PID=62) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:10.314+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:04:10.316+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:04:10.316+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:10.868+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:04:10.863+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55, in <module>
+    op_kwargs= t1.xcom_pull(datasets)
+                            ^^^^^^^^
+NameError: name 'datasets' is not defined
+[2024-06-01T18:04:10.871+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:10.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.580 seconds
+[2024-06-01T18:04:16.737+0000] {processor.py:161} INFO - Started process (PID=70) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:16.738+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:04:16.740+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:04:16.740+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:16.755+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:04:16.753+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55
+    op_kwargs= t1.xcom_pull("datasets":)
+                                      ^
+SyntaxError: invalid syntax
+[2024-06-01T18:04:16.755+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:16.773+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.042 seconds
+[2024-06-01T18:04:22.777+0000] {processor.py:161} INFO - Started process (PID=71) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:22.778+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:04:22.779+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:04:22.779+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:22.791+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:04:22.790+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55
+    op_kwargs= t1.xcom_pull("datasets": t1.output)
+                                      ^
+SyntaxError: invalid syntax
+[2024-06-01T18:04:22.792+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:22.807+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.037 seconds
+[2024-06-01T18:04:52.960+0000] {processor.py:161} INFO - Started process (PID=78) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:52.961+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:04:52.962+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:04:52.962+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:52.974+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:04:52.973+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55
+    op_kwargs= t1.xcom_pull("datasets": t1.output)
+                                      ^
+SyntaxError: invalid syntax
+[2024-06-01T18:04:52.975+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:52.990+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.035 seconds
+[2024-06-01T18:04:53.976+0000] {processor.py:161} INFO - Started process (PID=79) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:53.977+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:04:53.979+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:04:53.979+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:54.445+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:04:54.635+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:04:54.635+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:04:54.652+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:04:54.651+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:04:54.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.699 seconds
+[2024-06-01T18:05:24.902+0000] {processor.py:161} INFO - Started process (PID=87) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:05:24.903+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:05:24.905+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:05:24.905+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:05:25.327+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:05:25.346+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:05:25.345+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:05:25.366+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:05:25.365+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:05:25.382+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.486 seconds
+[2024-06-01T18:05:55.542+0000] {processor.py:161} INFO - Started process (PID=95) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:05:55.543+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:05:55.547+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:05:55.546+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:05:56.390+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:05:56.423+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:05:56.422+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:05:56.446+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:05:56.446+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:05:56.468+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.935 seconds
+[2024-06-01T18:06:26.599+0000] {processor.py:161} INFO - Started process (PID=103) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:06:26.600+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:06:26.602+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:06:26.602+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:06:27.043+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:06:27.068+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:06:27.067+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:06:27.093+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:06:27.093+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:06:27.121+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.527 seconds
+[2024-06-01T18:06:36.639+0000] {processor.py:161} INFO - Started process (PID=105) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:06:36.640+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:06:36.642+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:06:36.641+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:06:37.108+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:06:37.093+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:06:37.113+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:06:37.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.519 seconds
+[2024-06-01T18:06:43.674+0000] {processor.py:161} INFO - Started process (PID=113) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:06:43.674+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:06:43.676+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:06:43.676+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:06:44.088+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:06:44.082+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55, in <module>
+    op_kwargs= {"datasets": xcom_pull(task_ids='task_id_of_t1')}
+                            ^^^^^^^^^
+NameError: name 'xcom_pull' is not defined
+[2024-06-01T18:06:44.092+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:06:44.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.439 seconds
+[2024-06-01T18:06:53.721+0000] {processor.py:161} INFO - Started process (PID=115) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:06:53.722+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:06:53.724+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:06:53.724+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:06:54.130+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:06:54.127+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:06:54.131+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:06:54.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.428 seconds
+[2024-06-01T18:07:24.312+0000] {processor.py:161} INFO - Started process (PID=124) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:07:24.313+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:07:24.315+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:07:24.314+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:07:24.707+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:07:24.704+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:07:24.709+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:07:24.722+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.415 seconds
+[2024-06-01T18:07:54.869+0000] {processor.py:161} INFO - Started process (PID=132) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:07:54.870+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:07:54.872+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:07:54.872+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:07:55.253+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:07:55.249+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:07:55.254+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:07:55.266+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.403 seconds
+[2024-06-01T18:08:25.459+0000] {processor.py:161} INFO - Started process (PID=141) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:08:25.460+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:08:25.461+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:08:25.461+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:08:25.941+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:08:25.937+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:08:25.943+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:08:25.956+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.507 seconds
+[2024-06-01T18:08:56.118+0000] {processor.py:161} INFO - Started process (PID=149) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:08:56.119+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:08:56.120+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:08:56.120+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:08:56.507+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:08:56.503+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 55, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:08:56.508+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:08:56.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.410 seconds
+[2024-06-01T18:09:08.198+0000] {processor.py:161} INFO - Started process (PID=151) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:09:08.202+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:09:08.205+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:09:08.204+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:09:08.756+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:09:08.752+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 54, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:09:08.758+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:09:08.787+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.602 seconds
+[2024-06-01T18:09:38.957+0000] {processor.py:161} INFO - Started process (PID=159) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:09:38.958+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:09:38.958+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:09:38.958+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:09:39.342+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:09:39.338+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 54, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:09:39.343+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:09:39.355+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.403 seconds
+[2024-06-01T18:10:09.490+0000] {processor.py:161} INFO - Started process (PID=167) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:10:09.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:10:09.492+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:10:09.491+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:10:09.871+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:10:09.867+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 54, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:10:09.872+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:10:09.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.399 seconds
+[2024-06-01T18:10:40.047+0000] {processor.py:161} INFO - Started process (PID=175) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:10:40.048+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:10:40.049+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:10:40.048+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:10:40.432+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:10:40.428+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 54, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:10:40.433+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:10:40.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.403 seconds
+[2024-06-01T18:11:10.587+0000] {processor.py:161} INFO - Started process (PID=183) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:11:10.587+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:11:10.588+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:11:10.588+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:11:10.964+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:11:10.961+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 54, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:11:10.965+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:11:10.977+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.396 seconds
+[2024-06-01T18:11:41.115+0000] {processor.py:161} INFO - Started process (PID=191) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:11:41.116+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:11:41.117+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:11:41.117+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:11:41.514+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:11:41.510+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 54, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:11:41.515+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:11:41.527+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.417 seconds
+[2024-06-01T18:12:11.669+0000] {processor.py:161} INFO - Started process (PID=199) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:11.670+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:12:11.671+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:11.670+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:12.046+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:12.041+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 54, in <module>
+    op_kwargs= {"datasets": t2.xcom_pull(task_ids='task_id_of_t1')}
+                            ^^
+NameError: name 't2' is not defined
+[2024-06-01T18:12:12.047+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:12.058+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.395 seconds
+[2024-06-01T18:12:14.102+0000] {processor.py:161} INFO - Started process (PID=207) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:14.102+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:12:14.103+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:14.103+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:14.115+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:14.114+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 56
+    op_kwargs= {"datasets": }
+                          ^
+SyntaxError: expression expected after dictionary key and ':'
+[2024-06-01T18:12:14.115+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:14.131+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.035 seconds
+[2024-06-01T18:12:24.208+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:24.210+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:12:24.212+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:24.212+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:24.238+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:24.237+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 56
+    op_kwargs= {"datasets": }
+                          ^
+SyntaxError: expression expected after dictionary key and ':'
+[2024-06-01T18:12:24.239+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:24.271+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.078 seconds
+[2024-06-01T18:12:28.226+0000] {processor.py:161} INFO - Started process (PID=209) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:28.226+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:12:28.227+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:28.227+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:28.240+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:28.239+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 56
+    op_kwargs= {"datasets": }
+                          ^
+SyntaxError: expression expected after dictionary key and ':'
+[2024-06-01T18:12:28.240+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:28.256+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.036 seconds
+[2024-06-01T18:12:38.283+0000] {processor.py:161} INFO - Started process (PID=210) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:38.284+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:12:38.286+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:38.286+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:38.303+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:38.302+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 56
+    op_kwargs= {"datasets": }
+                          ^
+SyntaxError: expression expected after dictionary key and ':'
+[2024-06-01T18:12:38.304+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:38.320+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.045 seconds
+[2024-06-01T18:12:44.345+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:44.346+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:12:44.346+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:44.346+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:44.358+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:44.357+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 29
+    datasets = ti.
+                  ^
+SyntaxError: invalid syntax
+[2024-06-01T18:12:44.359+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:44.377+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.037 seconds
+[2024-06-01T18:12:48.402+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:48.404+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:12:48.406+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:48.405+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:48.437+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:48.436+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 56
+    op_kwargs= {"datasets": }
+                          ^
+SyntaxError: expression expected after dictionary key and ':'
+[2024-06-01T18:12:48.441+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:48.465+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.077 seconds
+[2024-06-01T18:12:53.459+0000] {processor.py:161} INFO - Started process (PID=219) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:53.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:12:53.462+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:53.461+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:53.476+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:12:53.475+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 56
+    op_kwargs= {"datasets": }
+                          ^
+SyntaxError: expression expected after dictionary key and ':'
+[2024-06-01T18:12:53.477+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:12:53.493+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.041 seconds
+[2024-06-01T18:13:02.565+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:02.567+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:13:02.568+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:13:02.567+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:02.582+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:13:02.580+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 56
+    op_kwargs= {"datasets": }
+                          ^
+SyntaxError: expression expected after dictionary key and ':'
+[2024-06-01T18:13:02.583+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:02.600+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.041 seconds
+[2024-06-01T18:13:08.669+0000] {processor.py:161} INFO - Started process (PID=221) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:08.670+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:13:08.671+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:13:08.671+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:08.685+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:13:08.684+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 56
+    op_kwargs= {"datasets": }
+                          ^
+SyntaxError: expression expected after dictionary key and ':'
+[2024-06-01T18:13:08.685+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:08.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.039 seconds
+[2024-06-01T18:13:12.716+0000] {processor.py:161} INFO - Started process (PID=222) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:12.718+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:13:12.720+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:13:12.719+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:12.735+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:13:12.734+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 29
+    datasets = ti.xcoms_pull(task_ids=)
+                             ^^^^^^^^^
+SyntaxError: expected argument value expression
+[2024-06-01T18:13:12.736+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:12.757+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.053 seconds
+[2024-06-01T18:13:16.761+0000] {processor.py:161} INFO - Started process (PID=229) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:16.762+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:13:16.763+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:13:16.763+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:16.775+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:13:16.774+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 56
+    op_kwargs= {"datasets": }
+                          ^
+SyntaxError: expression expected after dictionary key and ':'
+[2024-06-01T18:13:16.776+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:16.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.035 seconds
+[2024-06-01T18:13:21.821+0000] {processor.py:161} INFO - Started process (PID=230) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:21.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:13:21.823+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:13:21.822+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:21.833+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:13:21.832+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 56
+    op_kwargs= {"datasets": }
+                          ^
+SyntaxError: expression expected after dictionary key and ':'
+[2024-06-01T18:13:21.834+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:21.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.034 seconds
+[2024-06-01T18:13:34.917+0000] {processor.py:161} INFO - Started process (PID=231) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:34.918+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:13:34.919+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:13:34.919+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:34.931+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:13:34.930+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/covid19_project_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/covid19_project_dag.py", line 56
+    op_kwargs= {"datasets": }
+                          ^
+SyntaxError: expression expected after dictionary key and ':'
+[2024-06-01T18:13:34.932+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:13:34.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.035 seconds
+[2024-06-01T18:14:04.080+0000] {processor.py:161} INFO - Started process (PID=238) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:14:04.082+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:14:04.083+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:14:04.082+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:14:04.655+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:14:04.777+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:14:04.776+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:14:04.798+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:14:04.797+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:14:04.824+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.750 seconds
+[2024-06-01T18:14:35.042+0000] {processor.py:161} INFO - Started process (PID=246) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:14:35.042+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:14:35.043+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:14:35.043+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:14:35.487+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:14:35.509+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:14:35.507+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:14:35.529+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:14:35.529+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:14:35.549+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.514 seconds
+[2024-06-01T18:15:05.621+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:15:05.622+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:15:05.623+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:15:05.623+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:15:06.059+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:15:06.076+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:15:06.076+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:15:06.096+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:15:06.095+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:15:06.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.529 seconds
+[2024-06-01T18:15:36.298+0000] {processor.py:161} INFO - Started process (PID=262) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:15:36.298+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:15:36.299+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:15:36.299+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:15:36.697+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:15:36.716+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:15:36.715+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:15:36.732+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:15:36.732+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:15:36.746+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.454 seconds
+[2024-06-01T18:15:46.822+0000] {processor.py:161} INFO - Started process (PID=270) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:15:46.824+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:15:46.826+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:15:46.825+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:15:47.289+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:15:47.308+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:15:47.308+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:15:47.326+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:15:47.325+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:15:47.343+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.533 seconds
+[2024-06-01T18:16:17.477+0000] {processor.py:161} INFO - Started process (PID=278) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:16:17.478+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:16:17.479+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:16:17.479+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:16:17.862+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:16:17.880+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:16:17.880+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:16:17.898+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:16:17.898+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:16:17.914+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.442 seconds
+[2024-06-01T18:16:48.058+0000] {processor.py:161} INFO - Started process (PID=286) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:16:48.059+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:16:48.060+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:16:48.060+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:16:48.444+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:16:48.471+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:16:48.470+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:16:48.490+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:16:48.490+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:16:48.505+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.453 seconds
+[2024-06-01T18:17:18.684+0000] {processor.py:161} INFO - Started process (PID=294) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:17:18.685+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:17:18.686+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:17:18.685+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:17:19.235+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:17:19.257+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:17:19.255+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:17:19.275+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:17:19.275+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:17:19.292+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.614 seconds
+[2024-06-01T18:17:49.326+0000] {processor.py:161} INFO - Started process (PID=302) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:17:49.327+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:17:49.328+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:17:49.327+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:17:49.743+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:17:49.762+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:17:49.761+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:17:49.778+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:17:49.778+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:17:49.793+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.473 seconds
+[2024-06-01T18:18:19.941+0000] {processor.py:161} INFO - Started process (PID=310) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:18:19.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:18:19.942+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:18:19.942+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:18:20.333+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:18:20.352+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:18:20.352+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:18:20.370+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:18:20.370+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:18:20.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.451 seconds
+[2024-06-01T18:18:50.533+0000] {processor.py:161} INFO - Started process (PID=318) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:18:50.534+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:18:50.536+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:18:50.535+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:18:50.937+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:18:50.956+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:18:50.955+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:18:50.974+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:18:50.974+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:18:50.990+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.464 seconds
+[2024-06-01T18:19:21.139+0000] {processor.py:161} INFO - Started process (PID=326) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:19:21.140+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:19:21.141+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:19:21.140+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:19:21.543+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:19:21.561+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:19:21.561+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:19:21.579+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:19:21.579+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:19:21.596+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.465 seconds
+[2024-06-01T18:19:51.876+0000] {processor.py:161} INFO - Started process (PID=334) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:19:51.877+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:19:51.878+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:19:51.878+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:19:52.305+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:19:52.324+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:19:52.324+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:19:52.343+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:19:52.343+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:19:52.358+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.489 seconds
+[2024-06-01T18:20:22.551+0000] {processor.py:161} INFO - Started process (PID=342) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:20:22.552+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:20:22.553+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:20:22.552+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:20:22.947+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:20:22.965+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:20:22.965+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:20:22.989+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:20:22.987+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:20:23.074+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.529 seconds
+[2024-06-01T18:20:53.242+0000] {processor.py:161} INFO - Started process (PID=350) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:20:53.242+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:20:53.243+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:20:53.243+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:20:53.708+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:20:53.726+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:20:53.725+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:20:53.742+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:20:53.742+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:20:53.755+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.520 seconds
+[2024-06-01T18:21:15.814+0000] {processor.py:161} INFO - Started process (PID=358) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:21:15.815+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:21:15.816+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:21:15.815+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:21:16.389+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:21:16.409+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:21:16.409+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:21:16.427+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:21:16.427+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:21:16.444+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.635 seconds
+[2024-06-01T18:21:46.591+0000] {processor.py:161} INFO - Started process (PID=366) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:21:46.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:21:46.593+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:21:46.592+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:21:46.988+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:21:47.007+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:21:47.006+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:21:47.028+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:21:47.027+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:21:47.050+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.465 seconds
+[2024-06-01T18:22:17.235+0000] {processor.py:161} INFO - Started process (PID=374) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:22:17.236+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:22:17.237+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:22:17.236+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:22:17.669+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:22:17.693+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:22:17.692+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:22:17.717+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:22:17.717+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:22:17.737+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.508 seconds
+[2024-06-01T18:22:47.887+0000] {processor.py:161} INFO - Started process (PID=382) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:22:47.888+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:22:47.888+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:22:47.888+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:22:48.304+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:22:48.324+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:22:48.324+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:22:48.342+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:22:48.342+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:22:48.357+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.476 seconds
+[2024-06-01T18:23:18.533+0000] {processor.py:161} INFO - Started process (PID=390) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:23:18.534+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:23:18.535+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:23:18.535+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:23:18.950+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:23:18.967+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:23:18.967+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:23:18.985+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:23:18.985+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:23:18.999+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.471 seconds
+[2024-06-01T18:23:49.148+0000] {processor.py:161} INFO - Started process (PID=398) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:23:49.149+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:23:49.150+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:23:49.149+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:23:49.641+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:23:49.663+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:23:49.662+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:23:49.680+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:23:49.680+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:23:49.698+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.557 seconds
+[2024-06-01T18:24:19.849+0000] {processor.py:161} INFO - Started process (PID=406) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:24:19.850+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:24:19.851+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:24:19.851+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:24:20.267+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:24:20.285+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:24:20.284+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:24:20.301+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:24:20.301+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:24:20.315+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.472 seconds
+[2024-06-01T18:24:50.520+0000] {processor.py:161} INFO - Started process (PID=414) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:24:50.521+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:24:50.522+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:24:50.522+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:24:51.031+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:24:51.051+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:24:51.051+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:24:51.072+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:24:51.072+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:24:51.093+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.580 seconds
+[2024-06-01T18:25:21.230+0000] {processor.py:161} INFO - Started process (PID=422) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:25:21.231+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:25:21.232+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:25:21.232+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:25:21.743+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:25:21.760+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:25:21.760+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:25:21.778+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:25:21.777+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:25:21.793+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.569 seconds
+[2024-06-01T18:25:52.030+0000] {processor.py:161} INFO - Started process (PID=430) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:25:52.031+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:25:52.032+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:25:52.032+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:25:52.433+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:25:52.451+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:25:52.450+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:25:52.469+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:25:52.469+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:25:52.484+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.459 seconds
+[2024-06-01T18:26:22.618+0000] {processor.py:161} INFO - Started process (PID=438) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:26:22.619+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:26:22.620+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:26:22.619+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:26:23.066+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:26:23.083+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:26:23.082+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:26:23.100+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:26:23.100+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:26:23.115+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.504 seconds
+[2024-06-01T18:26:53.300+0000] {processor.py:161} INFO - Started process (PID=446) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:26:53.302+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:26:53.302+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:26:53.302+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:26:53.811+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:26:53.832+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:26:53.831+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:26:53.850+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:26:53.850+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:26:53.868+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.575 seconds
+[2024-06-01T18:27:24.034+0000] {processor.py:161} INFO - Started process (PID=454) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:27:24.035+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:27:24.036+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:27:24.036+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:27:24.482+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:27:24.500+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:27:24.500+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:27:24.517+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:27:24.517+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:27:24.533+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.507 seconds
+[2024-06-01T18:27:42.649+0000] {processor.py:161} INFO - Started process (PID=456) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:27:42.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:27:42.652+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:27:42.651+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:27:43.243+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:27:43.260+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:27:43.260+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:27:43.276+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:27:43.276+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:27:43.324+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.684 seconds
+[2024-06-01T18:28:13.465+0000] {processor.py:161} INFO - Started process (PID=464) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:28:13.466+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:28:13.467+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:28:13.466+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:28:13.924+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:28:13.951+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:28:13.951+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:28:13.978+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:28:13.978+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:28:13.996+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.537 seconds
+[2024-06-01T18:28:44.155+0000] {processor.py:161} INFO - Started process (PID=478) to work on /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:28:44.156+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/covid19_project_dag.py for tasks to queue
+[2024-06-01T18:28:44.157+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:28:44.156+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:28:44.559+0000] {processor.py:840} INFO - DAG(s) 'covid19_project_dag' retrieved from /opt/airflow/dags/covid19_project_dag.py
+[2024-06-01T18:28:44.578+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:28:44.577+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-01T18:28:44.597+0000] {logging_mixin.py:188} INFO - [2024-06-01T18:28:44.596+0000] {dag.py:3954} INFO - Setting next_dagrun for covid19_project_dag to 2024-06-02 00:00:00+00:00, run_after=2024-06-03 00:00:00+00:00
+[2024-06-01T18:28:44.612+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/covid19_project_dag.py took 0.463 seconds

@@ -2,7 +2,14 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 import requests
+import pandas as pd
 
+default_args = {
+    "owner": "kelvin",
+    "retries": 2,
+    "retry_delay": timedelta(minutes=2)
+}
+# getting latest data for current day
 def get_daily_data():
 
     urls = ["https://api.data.gov.my/data-catalogue?id=covid_cases&limit=1",
@@ -16,13 +23,24 @@ def get_daily_data():
         datasets.append(response_json)
 
     print(datasets)
+    return datasets
 
+#combine the datasets into one row
+def consolidate_data(ti):
 
-default_args = {
-    "owner": "kelvin",
-    "retries": 2,
-    "retry_delay": timedelta(minutes=2)
-}
+    datasets = ti.xcom_pull(task_ids="get_data")
+    combined_datasets = {}
+    for dataset in datasets:
+        for key,value in dataset[0].items():
+            combined_datasets[key] = value
+
+    df = pd.DataFrame([combined_datasets])
+    df = df.drop_duplicates()
+    pd.set_option('display.max_columns', None)
+
+    print(df)
+
+    return df
 
 with DAG(
     dag_id="covid19_project_dag",
@@ -36,5 +54,9 @@ with DAG(
         task_id = "get_data",
         python_callable=get_daily_data
     )
+    t2 = PythonOperator(
+        task_id="consolidate_data",
+        python_callable = consolidate_data
+    )
 
-    t1
+    t1>>t2
