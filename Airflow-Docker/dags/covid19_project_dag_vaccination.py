@@ -19,8 +19,8 @@ default_args = {
 
 
 with DAG(
-    dag_id="covid19_project_dag_epidemic",
-    description="this is a 5011CEM Big Data Project, this dag manages epidemic data",
+    dag_id="covid19_project_dag_vaccination",
+    description="this is a 5011CEM Big Data Project, this dag manages vaccination data",
     start_date = datetime(2024, 6, 2, 0),
     schedule_interval="@weekly",
     default_args=default_args
@@ -28,12 +28,8 @@ with DAG(
 ) as dag:
     t1 = PythonOperator(
         task_id = "get_data",
-        python_callable=tasks.get_weekly_epidemic_data
-    )
-    t2 = PythonOperator(
-        task_id="data_preprocessing",
-        python_callable=tasks.consolidate_data
+        python_callable=tasks.
     )
 
 
-    t1>>t2
+    t1
