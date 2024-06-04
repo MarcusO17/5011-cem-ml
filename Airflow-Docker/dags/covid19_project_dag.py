@@ -21,18 +21,15 @@ default_args = {
 with DAG(
     dag_id="covid19_project_dag",
     description="this is a 5011CEM Big Data Project",
-    start_date = datetime(2024, 6, 1, 12),
-    schedule_interval="@daily",
+    start_date = datetime(2024, 6, 2, 0),
+    schedule_interval="@weekly",
     default_args=default_args
 
 ) as dag:
     t1 = PythonOperator(
         task_id = "get_data",
-        python_callable=tasks.get_daily_data
-    )
-    t2 = PythonOperator(
-        task_id="consolidate_data",
-        python_callable = tasks.consolidate_data
+        python_callable=tasks.get_weekly_data
     )
 
-    t1>>t2
+
+    t1
