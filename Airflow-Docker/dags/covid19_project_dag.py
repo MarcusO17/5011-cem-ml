@@ -32,7 +32,7 @@ with DAG(
     )
     t2 = PythonOperator(
         task_id="data_preprocessing",
-        python_callable=tasks.consolidate_data
+        python_callable=tasks.consolidate_epidemic_data
     )
 
 

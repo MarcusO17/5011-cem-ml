@@ -28,8 +28,13 @@ with DAG(
 ) as dag:
     t1 = PythonOperator(
         task_id = "get_data",
-        python_callable=tasks.
+        python_callable=tasks.get_weekly_vaccination_data
+    )
+
+    t2 = PythonOperator(
+        task_id="data_preprocessing",
+        python_callable = tasks.consolidate_vaccination_data
     )
 
 
-    t1
+    t1>>t2
