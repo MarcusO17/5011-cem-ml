@@ -63,6 +63,25 @@ def data_cleaning(ti):
 
     return weekly_datasets_state, weekly_datasets_national
 
+def data_cleaning_2(ti):
+    weekly_datasets_state, weekly_datasets_national = ti.xcom_pull(task_ids="epidemic_data_cleaning")
+    interpolate_col = ["beds_icu", "beds_icu_rep", "beds_icu_total", "beds_icu_covid", "vent", "vent_port", "icu_covid", "icu_pui", "icu_noncovid", "vent_covid", "vent_pui", "vent_noncovid", "vent_used", "vent_port_used"]
+    weekly_datasets_state[interpolate_col] = weekly_datasets_state[interpolate_col].interpolate(method="linear")
+
+    median_rtk_ag = weekly_datasets_state["rtk-ag"].median()
+    median_pcr = weekly_datasets_state["pcr"].median()
+
+    weekly_datasets_state["rtk-ag"] = weekly_datasets_state["rtk-ag"].fillna(median_rtk_ag)
+    weekly_datasets_state["pcr"] = weekly_datasets_state["pcr"].fillna(median_pcr)
+
+    median_rtk_ag = weekly_datasets_national["rtk-ag"].median()
+    median_pcr = weekly_datasets_national["pcr"].median()
+
+    weekly_datasets_national["rtk-ag"] = weekly_datasets_national["rtk-ag"].fillna(median_rtk_ag)
+    weekly_datasets_national["pcr"] = weekly_datasets_national["pcr"].fillna(median_pcr)
+
+    return weekly_datasets_state, weekly_datasets_national
+
 # combining multiple dataframes
 def consolidate_epidemic_data(ti):
 
