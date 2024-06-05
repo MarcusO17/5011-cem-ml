@@ -50,25 +50,41 @@ def get_weekly_epidemic_data():
 
     return weekly_datasets_state, weekly_datasets_national
 
+def data_cleaning(ti):
+    weekly_datasets_state, weekly_datasets_national = ti.xcom_pull(task_ids="epidemic_data_preprocessing")
+    epidemic_state_columns = ["cases_child", "cases_adolescent", "cases_adult", "cases_elderly", "deaths_tat"]
+    epidemic_national_columns = ["cluster_import", "cluster_religious", "cluster_community", "cluster_highRisk", "cluster_education", "cluster_detentionCentre", "cluster_workplace", "deaths_tat"]
+
+    for col in epidemic_state_columns:
+        weekly_datasets_state = weekly_datasets_state.drop(columns=[col])
+
+    for col in epidemic_national_columns:
+        weekly_datasets_national = weekly_datasets_national.drop(columns=[col])
+
+    return weekly_datasets_state, weekly_datasets_national
+
 # combining multiple dataframes
 def consolidate_epidemic_data(ti):
-    weekly_datasets_state, weekly_datasets_national = ti.xcom_pull(task_ids="get_data")
-    combined_df_state = pd.concat(weekly_datasets_state)
-    print(combined_df_state)
 
-    print("=========================================================================")
+    weekly_datasets_state, weekly_datasets_national = ti.xcom_pull(task_ids="get_epidemic_data")
+    combined_epidemic_state = weekly_datasets_state[0]
 
-    combined_df_national = pd.concat(weekly_datasets_national)
-    print(combined_df_national)
+    for dataset in weekly_datasets_state[1:]:
+        combined_epidemic_state = pd.merge(combined_epidemic_state, dataset, on=["date", "state"], how="outer")
 
-    return combined_df_state, combined_df_national
+    combined_epidemic_national = weekly_datasets_national[0]
+
+    for dataset in weekly_datasets_national[1:]:
+        combined_epidemic_national = pd.merge(combined_epidemic_national, dataset, on="date", how="outer")
+
+    return combined_epidemic_state, combined_epidemic_national
+
 
 def get_weekly_vaccination_data():
     # make a dataframe for state and another for national level
     # not sure how to combine them so its better to separate them
 
-    urls_state = ["https://raw.githubusercontent.com/CITF-Malaysia/citf-public/main/vaccination/vax_demog_age.csv",
-                  "https://raw.githubusercontent.com/CITF-Malaysia/citf-public/main/vaccination/vax_state.csv"]
+    urls_state = ["https://raw.githubusercontent.com/CITF-Malaysia/citf-public/main/vaccination/vax_state.csv"]
 
     urls_national = ["https://raw.githubusercontent.com/CITF-Malaysia/citf-public/main/vaccination/vax_malaysia.csv"]
 
@@ -109,8 +125,8 @@ def get_weekly_vaccination_data():
 
 # combining multiple dataframes
 def consolidate_vaccination_data(ti):
-    weekly_datasets_state, weekly_datasets_national = ti.xcom_pull(task_ids="get_data")
-    combined_df_state = pd.concat(weekly_datasets_state)
+    weekly_datasets_state, weekly_datasets_national = ti.xcom_pull(task_ids="get_vaccination_data")
+    combined_df_state = weekly_datasets_state
     print(combined_df_state)
 
     print("=========================================================================")
