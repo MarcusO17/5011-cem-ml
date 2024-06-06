@@ -48,11 +48,9 @@ with DAG(
         python_callable=tasks.data_cleaning
     )
     t6 = PythonOperator(
-        task_id="epidemic_data_cleaning_2",
-        python_callable=tasks.data_cleaning_2
+        task_id="update_missing_testing_data",
+        python_callable=tasks.update_missing_testing_data
     )
-
-
-    t1>>t2>>t5>>t6
-
+    t1>>t2>>t5
+    t6>>t2
     t3>>t4

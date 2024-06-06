@@ -1,5 +1,6 @@
 import pandas as pd
 import datetime
+from airflow.models import Variable
 
 # get data for last week
 def get_weekly_epidemic_data():
@@ -62,26 +63,6 @@ def data_cleaning(ti):
         weekly_datasets_national = weekly_datasets_national.drop(columns=[col])
 
     return weekly_datasets_state, weekly_datasets_national
-
-def data_cleaning_2(ti):
-    weekly_datasets_state, weekly_datasets_national = ti.xcom_pull(task_ids="epidemic_data_cleaning")
-    interpolate_col = ["beds_icu", "beds_icu_rep", "beds_icu_total", "beds_icu_covid", "vent", "vent_port", "icu_covid", "icu_pui", "icu_noncovid", "vent_covid", "vent_pui", "vent_noncovid", "vent_used", "vent_port_used"]
-    weekly_datasets_state[interpolate_col] = weekly_datasets_state[interpolate_col].interpolate(method="linear")
-
-    median_rtk_ag = weekly_datasets_state["rtk-ag"].median()
-    median_pcr = weekly_datasets_state["pcr"].median()
-
-    weekly_datasets_state["rtk-ag"] = weekly_datasets_state["rtk-ag"].fillna(median_rtk_ag)
-    weekly_datasets_state["pcr"] = weekly_datasets_state["pcr"].fillna(median_pcr)
-
-    median_rtk_ag = weekly_datasets_national["rtk-ag"].median()
-    median_pcr = weekly_datasets_national["pcr"].median()
-
-    weekly_datasets_national["rtk-ag"] = weekly_datasets_national["rtk-ag"].fillna(median_rtk_ag)
-    weekly_datasets_national["pcr"] = weekly_datasets_national["pcr"].fillna(median_pcr)
-
-    return weekly_datasets_state, weekly_datasets_national
-
 # combining multiple dataframes
 def consolidate_epidemic_data(ti):
 
@@ -96,8 +77,51 @@ def consolidate_epidemic_data(ti):
     for dataset in weekly_datasets_national[1:]:
         combined_epidemic_national = pd.merge(combined_epidemic_national, dataset, on="date", how="outer")
 
+    missing_testing_dates_state = combined_epidemic_state.loc[combined_epidemic_state["rtk-ag"].isnull() | combined_epidemic_state["pcr"].isnull(), ["date", "state"]]
+    missing_testing_dates_national = combined_epidemic_national.loc[combined_epidemic_national["rtk-ag"].isnull() | combined_epidemic_national["pcr"].isnull(), "date"]
+
+    missing_testing_json = missing_testing_dates_state.to_json()
+    missing_national_json = missing_testing_dates_national.to_json()
+
+    Variable.set("missing_testing_dates_state", missing_testing_json)
+    Variable.set("missing_testing_dates_national", missing_national_json)
+
     return combined_epidemic_state, combined_epidemic_national
 
+def update_missing_testing_data():
+    try:
+        missing_testing_dates_state = Variable.get("missing_testing_dates_state")
+        missing_testing_dates_national = Variable.get("missing_testing_dates_national")
+
+        missing_testing_dates_state = pd.read_json(missing_testing_dates_state)
+        missing_testing_dates_national = pd.read_json(missing_testing_dates_national)
+    except Exception as e:
+        print(e)
+        return
+
+    if missing_testing_dates_state is None or missing_testing_dates_national is None:
+        return
+
+    url_testing_state = "https://raw.githubusercontent.com/MoH-Malaysia/covid19-public/main/epidemic/tests_state.csv"
+    url_testing_national = "https://raw.githubusercontent.com/MoH-Malaysia/covid19-public/main/epidemic/tests_malaysia.csv"
+
+    df_testing_state = pd.read_csv(url_testing_state)
+    df_testing_state["date"] = pd.to_datetime(df_testing_state["date"])
+    for index, row in missing_testing_dates_state.iterrows():
+        date = row["date"]
+        state = row["state"]
+        date_mask = (df_testing_state["date"] == pd.to_datetime(date)) & (df_testing_state["state"] == state)
+        if date_mask.any():
+
+            print("insert data into db for state")
+
+    df_testing_national = pd.read_csv(url_testing_national)
+    df_testing_national["date"] = pd.to_datetime(df_testing_national["date"])
+    for date in missing_testing_dates_national:
+        date_mask = df_testing_national["date"] == pd.to_datetime(date)
+        if date_mask.any():
+
+            print("insert data into db for national")
 
 def get_weekly_vaccination_data():
     # make a dataframe for state and another for national level
