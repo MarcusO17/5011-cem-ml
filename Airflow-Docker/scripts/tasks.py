@@ -1,6 +1,8 @@
 import pandas as pd
 import datetime
 from airflow.models import Variable
+from supabase import create_client, Client
+import os
 
 # get data for last week
 def get_weekly_epidemic_data():
@@ -170,12 +172,8 @@ def get_weekly_vaccination_data():
 def consolidate_vaccination_data(ti):
     weekly_datasets_state, weekly_datasets_national = ti.xcom_pull(task_ids="get_vaccination_data")
     combined_df_state = weekly_datasets_state
-    print(combined_df_state)
-
-    print("=========================================================================")
 
     combined_df_national = weekly_datasets_national
-    print(combined_df_national)
 
     return combined_df_state, combined_df_national
 
@@ -197,6 +195,28 @@ def get_previous_week_dates():
     previous_week_dates = pd.to_datetime(previous_week_dates)
 
     return previous_week_dates
+
+def start_supabase_client():
+    url: str = os.environ.get("https://eovzzguumzwayrfgpfxl.supabase.co")
+    key: str = os.environ.get(
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVvdnp6Z3V1bXp3YXlyZmdwZnhsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxNjgzMjcsImV4cCI6MjAyODc0NDMyN30.m6YIUaNXCaiEHG2TlRD0SE6BmuXPmODj2z5HK9MTfM4")
+    supabase: Client = create_client(url, key)
+
+    return Client
+def load_data(ti):
+    vaccination_df_state, vaccination_df_national = ti.xcom_pull(task_ids="consolidate_vaccination_data")
+    epidemic_df_state, epidemic_df_national = ti.xcom_pull(task_ids="epidemic_data_cleaning")
+    client = ti.xcom_pull(task_ids="start_db_client")
+
+    response = client.table("state_vaccination").upsert(vaccination_df_state.to_dict(orient='records'))
+    print("state_vaccination", response)
+    response = client.table("malaysia_vaccination").upsert(vaccination_df_national.to_dict(orient='records'))
+    print("malaysia_vaccination", response)
+    response = client.table("state_epidemic").upsert(epidemic_df_state.to_dict(orient='records'))
+    print("state_epidemic", response)
+    response = client.table("malaysia_epidemic").upsert(epidemic_df_national.to_dict(orient='records'))
+    print("malaysia_epidemic", response)
+
 
 
 

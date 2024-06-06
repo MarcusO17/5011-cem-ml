@@ -1,8 +1,7 @@
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-import requests
-import pandas as pd
+from supabase import create_client, Client
 
 import sys
 import os
@@ -51,6 +50,16 @@ with DAG(
         task_id="update_missing_testing_data",
         python_callable=tasks.update_missing_testing_data
     )
-    t1>>t2>>t5
+    t7 = PythonOperator(
+        task_id="start_db_client",
+        python_callable=tasks.start_supabase_client
+    )
+    t8 = PythonOperator(
+        task_id="load_data",
+        python_callable=tasks.load_data
+    )
+
+    t1>>t2>>t5>>t7
     t6>>t2
-    t3>>t4
+    t3>>t4>>t7
+    t7>>t8
