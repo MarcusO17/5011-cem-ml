@@ -1,8 +1,7 @@
 import pandas as pd
 import datetime
 from airflow.models import Variable
-from supabase import create_client, Client
-import os
+import numpy as np
 
 # get data for last week
 def get_weekly_epidemic_data():
@@ -56,7 +55,7 @@ def get_weekly_epidemic_data():
 def data_cleaning(ti):
     weekly_datasets_state, weekly_datasets_national = ti.xcom_pull(task_ids="epidemic_data_preprocessing")
     epidemic_state_columns = ["cases_child", "cases_adolescent", "cases_adult", "cases_elderly", "deaths_tat"]
-    epidemic_national_columns = ["cluster_import", "cluster_religious", "cluster_community", "cluster_highRisk", "cluster_education", "cluster_detentionCentre", "cluster_workplace", "deaths_tat"]
+    epidemic_national_columns = ["cluster_import", "cluster_religious", "cluster_community", "cluster_highRisk", "cluster_education", "cluster_detentionCentre", "cluster_workplace", "deaths_tat","cases_child", "cases_adolescent", "cases_adult", "cases_elderly"]
 
     for col in epidemic_state_columns:
         weekly_datasets_state = weekly_datasets_state.drop(columns=[col])
@@ -79,8 +78,14 @@ def consolidate_epidemic_data(ti):
     for dataset in weekly_datasets_national[1:]:
         combined_epidemic_national = pd.merge(combined_epidemic_national, dataset, on="date", how="outer")
 
-    missing_testing_dates_state = combined_epidemic_state.loc[combined_epidemic_state["rtk-ag"].isnull() | combined_epidemic_state["pcr"].isnull(), ["date", "state"]]
-    missing_testing_dates_national = combined_epidemic_national.loc[combined_epidemic_national["rtk-ag"].isnull() | combined_epidemic_national["pcr"].isnull(), "date"]
+    combined_epidemic_state["date"] = combined_epidemic_state["date"].dt.strftime("%Y-%m-%d %H:%M:%S")
+    combined_epidemic_national["date"] = combined_epidemic_national["date"].dt.strftime("%Y-%m-%d %H:%M:%S")
+
+    combined_epidemic_state = combined_epidemic_state.rename(columns={"rtk-ag": "rtk_ag"})
+    combined_epidemic_national = combined_epidemic_national.rename(columns={"rtk-ag": "rtk_ag"})
+
+    missing_testing_dates_state = combined_epidemic_state.loc[combined_epidemic_state["rtk_ag"].isnull() | combined_epidemic_state["pcr"].isnull(), ["date", "state"]]
+    missing_testing_dates_national = combined_epidemic_national.loc[combined_epidemic_national["rtk_ag"].isnull() | combined_epidemic_national["pcr"].isnull(), "date"]
 
     missing_testing_json = missing_testing_dates_state.to_json()
     missing_national_json = missing_testing_dates_national.to_json()
@@ -88,9 +93,44 @@ def consolidate_epidemic_data(ti):
     Variable.set("missing_testing_dates_state", missing_testing_json)
     Variable.set("missing_testing_dates_national", missing_national_json)
 
+    epidemic_national_col = ["deaths_new", "deaths_bid", "deaths_new_dod", "deaths_bid_dod", "deaths_unvax", "deaths_pvax",
+                             "deaths_fvax", "deaths_boost", "cases_new", "cases_import", "cases_recovered", "cases_active",
+                             "cases_cluster", "cases_unvax", "cases_pvax", "cases_fvax", "cases_boost", "cases_child",
+                             "cases_adolescent", "cases_adult", "cases_elderly", "cases_0_4", "cases_5_11", "cases_12_17",
+                             "cases_18_29", "cases_30_39", "cases_40_49", "cases_50_59", "cases_60_69", "cases_70_79",
+                             "cases_80", "rtk_ag", "pcr"]
+    placeholder = -1
+    for col in epidemic_national_col:
+        print(col)
+
+        combined_epidemic_national[col] = combined_epidemic_national[col].fillna(placeholder)
+        combined_epidemic_state[col] = combined_epidemic_state[col].fillna(placeholder)
+
+        combined_epidemic_national[col] = combined_epidemic_national[col].astype(int)
+        combined_epidemic_state[col] = combined_epidemic_state[col].astype(int)
+
+        #combined_epidemic_national[col] = combined_epidemic_national[col].replace(placeholder, None)
+        #combined_epidemic_state[col] = combined_epidemic_state[col].replace(placeholder, None)
+
+        print(combined_epidemic_national[col])
+        print(combined_epidemic_state[col])
+
+    epidemic_state_col = ["beds", "beds_covid", "beds_noncrit", "admitted_pui", "admitted_covid", "admitted_total",
+                          "discharged_pui",
+                          "discharged_covid", "discharged_total", "hosp_covid", "hosp_pui", "hosp_noncovid", "beds_icu",
+                          "beds_icu_rep",
+                          "beds_icu_total", "beds_icu_covid", "vent", "vent_port", "icu_covid", "icu_pui",
+                          "icu_noncovid", "vent_covid",
+                          "vent_pui", "vent_noncovid", "vent_used", "vent_port_used"]
+
+    for col in epidemic_state_col:
+        combined_epidemic_state[col] = combined_epidemic_state[col].fillna(placeholder)
+        combined_epidemic_state[col] = combined_epidemic_state[col].astype(int)
+        print(type(combined_epidemic_state[col]))
+
     return combined_epidemic_state, combined_epidemic_national
 
-def update_missing_testing_data():
+def update_missing_testing_data(client):
     try:
         missing_testing_dates_state = Variable.get("missing_testing_dates_state")
         missing_testing_dates_national = Variable.get("missing_testing_dates_national")
@@ -114,16 +154,35 @@ def update_missing_testing_data():
         state = row["state"]
         date_mask = (df_testing_state["date"] == pd.to_datetime(date)) & (df_testing_state["state"] == state)
         if date_mask.any():
-
-            print("insert data into db for state")
+            rows = df_testing_state[date_mask]
+            for index, row in rows.iterrows():
+                print(index, row)
+                response = client.table("state_epidemic").upsert(
+                    [{
+                        "date": row["date"],
+                        "state": row["state"],
+                        "rtk-ag": row["rtk-ag"],
+                        "pcr": row["pcr"],
+                    }]
+                ).execute()
+                print(response)
 
     df_testing_national = pd.read_csv(url_testing_national)
     df_testing_national["date"] = pd.to_datetime(df_testing_national["date"])
     for date in missing_testing_dates_national:
         date_mask = df_testing_national["date"] == pd.to_datetime(date)
         if date_mask.any():
-
-            print("insert data into db for national")
+            rows = df_testing_national[date_mask]
+            for index, row in rows.iterrows():
+                print(index, row)
+                response = client.table("malaysia_epidemic").upsert(
+                    [{
+                        "date": row["date"],
+                        "rtk-ag": row["rtk-ag"],
+                        "pcr": row["pcr"],
+                    }]
+                ).execute()
+                print(response)
 
 def get_weekly_vaccination_data():
     # make a dataframe for state and another for national level
@@ -172,12 +231,32 @@ def get_weekly_vaccination_data():
 def consolidate_vaccination_data(ti):
     weekly_datasets_state, weekly_datasets_national = ti.xcom_pull(task_ids="get_vaccination_data")
     combined_df_state = weekly_datasets_state
-
     combined_df_national = weekly_datasets_national
+
+    combined_df_state[0]["date"] = combined_df_state[0]["date"].dt.strftime("%Y-%m-%d %H:%M:%S")
+    combined_df_national[0]["date"] = combined_df_national[0]["date"].dt.strftime("%Y-%m-%d %H:%M:%S")
+
+    combined_df_state[0]["state"] = combined_df_state[0]["state"].astype(str)
+
+    dataframes = [combined_df_state, combined_df_national]
+
+    cols = ["daily_partial","daily_full","daily_booster","daily_booster2","daily","daily_partial_adol","daily_full_adol",
+            "daily_booster_adol","daily_booster2_adol","daily_partial_child","daily_full_child","daily_booster_child",
+            "daily_booster2_child","cumul_partial","cumul_full","cumul_booster","cumul_booster2","cumul","cumul_partial_adol",
+            "cumul_full_adol","cumul_booster_adol","cumul_booster2_adol","cumul_partial_child","cumul_full_child","cumul_booster_child",
+            "cumul_booster2_child","pfizer1","pfizer2","pfizer3","pfizer4","sinovac1","sinovac2","sinovac3","sinovac4","astra1",
+            "astra2","astra3","astra4","sinopharm1","sinopharm2","sinopharm3","sinopharm4","cansino","cansino3","cansino4",
+            "pending1","pending2","pending3","pending4"]
+
+    for df in dataframes:
+        for col in cols:
+            df[0][col] = df[0][col].astype(int)
+            print(type(df[0][col]))
 
     return combined_df_state, combined_df_national
 
 # get all dates from last week
+
 def get_previous_week_dates():
     today = datetime.date.today()
     start_date = today
@@ -196,27 +275,42 @@ def get_previous_week_dates():
 
     return previous_week_dates
 
-def start_supabase_client():
-    url: str = os.environ.get("https://eovzzguumzwayrfgpfxl.supabase.co")
-    key: str = os.environ.get(
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVvdnp6Z3V1bXp3YXlyZmdwZnhsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMxNjgzMjcsImV4cCI6MjAyODc0NDMyN30.m6YIUaNXCaiEHG2TlRD0SE6BmuXPmODj2z5HK9MTfM4")
-    supabase: Client = create_client(url, key)
+def make_json_serializable(records):
+    return [{k: (None if pd.isna(v) else v) for k, v in record.items()} for record in records]
 
-    return Client
-def load_data(ti):
-    vaccination_df_state, vaccination_df_national = ti.xcom_pull(task_ids="consolidate_vaccination_data")
+def load_data(client, ti):
+    vaccination_df_state, vaccination_df_national = ti.xcom_pull(task_ids="vaccination_data_preprocessing")
     epidemic_df_state, epidemic_df_national = ti.xcom_pull(task_ids="epidemic_data_cleaning")
-    client = ti.xcom_pull(task_ids="start_db_client")
 
-    response = client.table("state_vaccination").upsert(vaccination_df_state.to_dict(orient='records'))
-    print("state_vaccination", response)
-    response = client.table("malaysia_vaccination").upsert(vaccination_df_national.to_dict(orient='records'))
-    print("malaysia_vaccination", response)
-    response = client.table("state_epidemic").upsert(epidemic_df_state.to_dict(orient='records'))
-    print("state_epidemic", response)
-    response = client.table("malaysia_epidemic").upsert(epidemic_df_national.to_dict(orient='records'))
-    print("malaysia_epidemic", response)
+    pd.set_option('display.max_rows', None)
+    pd.set_option('display.max_columns', None)
 
+    vaccination_df_national[0] = vaccination_df_national[0].to_dict(orient='records')
+    vaccination_df_state[0] = vaccination_df_state[0].to_dict(orient='records')
+    epidemic_df_state = epidemic_df_state.to_dict(orient='records')
+    epidemic_df_national = epidemic_df_national.to_dict(orient='records')
 
+    vaccination_df_national[0] = make_json_serializable(vaccination_df_national[0])
+    vaccination_df_state[0] = make_json_serializable(vaccination_df_state[0])
+    epidemic_df_state = make_json_serializable(epidemic_df_state)
+    epidemic_df_national = make_json_serializable(epidemic_df_national)
 
+    print(vaccination_df_state[0])
+    print(epidemic_df_national)
+    print(epidemic_df_state)
+
+    data, count = client.table("MalaysiaVaccination").upsert(
+        vaccination_df_national[0]).execute()
+    print("MalaysiaVaccination", data, count)
+
+    data, count = client.table("StateVaccination").upsert(
+        vaccination_df_state[0]).execute()
+    print("StateVaccination", data, count)
+
+    data, count = client.table("MalaysiaEpidemic").upsert(epidemic_df_national).execute()
+    print("MalaysiaEpidemic", data, count)
+
+    # Upsert epidemic data for state level
+    data, count = client.table("StateEpidemic").upsert(epidemic_df_state).execute()
+    print("StateEpidemic", data, count)
 
