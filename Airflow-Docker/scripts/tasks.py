@@ -299,18 +299,20 @@ def load_data(client, ti):
     print(epidemic_df_national)
     print(epidemic_df_state)
 
-    data, count = client.table("MalaysiaVaccination").upsert(
-        vaccination_df_national[0]).execute()
-    print("MalaysiaVaccination", data, count)
+    try:
+        data, count = client.table("MalaysiaVaccination").upsert(
+            vaccination_df_national[0]).execute()
+        print("MalaysiaVaccination", data, count)
 
-    data, count = client.table("StateVaccination").upsert(
-        vaccination_df_state[0]).execute()
-    print("StateVaccination", data, count)
+        data, count = client.table("StateVaccination").upsert(
+            vaccination_df_state[0]).execute()
+        print("StateVaccination", data, count)
 
-    data, count = client.table("MalaysiaEpidemic").upsert(epidemic_df_national).execute()
-    print("MalaysiaEpidemic", data, count)
+        data, count = client.table("MalaysiaEpidemic").upsert(epidemic_df_national).execute()
+        print("MalaysiaEpidemic", data, count)
 
-    # Upsert epidemic data for state level
-    data, count = client.table("StateEpidemic").upsert(epidemic_df_state).execute()
-    print("StateEpidemic", data, count)
-
+        # Upsert epidemic data for state level
+        data, count = client.table("StateEpidemic").upsert(epidemic_df_state).execute()
+        print("StateEpidemic", data, count)
+    except Exception as e:
+        print(e)
