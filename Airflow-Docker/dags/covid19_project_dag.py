@@ -12,9 +12,11 @@ from scripts import tasks
 
 from supabase import create_client
 
+# supabase key
 supabase_url = "https://yorsqfjyqjmdzoenjynx.supabase.co"
 supabase_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlvcnNxZmp5cWptZHpvZW5qeW54Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTc3NDk5NTksImV4cCI6MjAzMzMyNTk1OX0.m62d7CVHI49gdBPQgSRwTBy_gJlkfplxcc1wz3F6GoU"
 
+# supabase client
 client = create_client(supabase_url, supabase_key)
 
 default_args = {
@@ -23,6 +25,7 @@ default_args = {
     "retry_delay": timedelta(minutes=1)
 }
 
+# sql queries to update placeholders into null values
 query1 = '''
 UPDATE "MalaysiaEpidemic"
 SET
@@ -49,7 +52,8 @@ with DAG(
     description="this is a 5011CEM Big Data Project",
     start_date = datetime(2024, 6, 2, 0),
     schedule_interval="@weekly",
-    default_args=default_args
+    default_args=default_args,
+    catchup=False
 
 ) as dag:
     t1 = PythonOperator(
@@ -95,6 +99,7 @@ with DAG(
         sql=query1
     )
 
+    # task dependencies
     t6>>t1>>t2>>t5>>t7
     t3>>t4>>t7
     t7>>t8>>t9

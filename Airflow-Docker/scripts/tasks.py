@@ -52,6 +52,7 @@ def get_weekly_epidemic_data():
 
     return weekly_datasets_state, weekly_datasets_national
 
+# dropping columns for epidemic tables
 def data_cleaning(ti):
     weekly_datasets_state, weekly_datasets_national = ti.xcom_pull(task_ids="epidemic_data_preprocessing")
     epidemic_state_columns = ["cases_child", "cases_adolescent", "cases_adult", "cases_elderly", "deaths_tat"]
@@ -90,6 +91,7 @@ def consolidate_epidemic_data(ti):
     missing_testing_json = missing_testing_dates_state.to_json()
     missing_national_json = missing_testing_dates_national.to_json()
 
+    # setting missing testing values so it can be inserted next week
     Variable.set("missing_testing_dates_state", missing_testing_json)
     Variable.set("missing_testing_dates_national", missing_national_json)
 
@@ -100,6 +102,8 @@ def consolidate_epidemic_data(ti):
                              "cases_18_29", "cases_30_39", "cases_40_49", "cases_50_59", "cases_60_69", "cases_70_79",
                              "cases_80", "rtk_ag", "pcr"]
     placeholder = -1
+
+    # changing any NaN values into placeholder value
     for col in epidemic_national_col:
         print(col)
 
@@ -130,11 +134,13 @@ def consolidate_epidemic_data(ti):
 
     return combined_epidemic_state, combined_epidemic_national
 
+# use to update test data inconsistent update schedule
 def update_missing_testing_data(client):
     try:
         missing_testing_dates_state = Variable.get("missing_testing_dates_state")
         missing_testing_dates_national = Variable.get("missing_testing_dates_national")
 
+        # convert into dataframe
         missing_testing_dates_state = pd.read_json(missing_testing_dates_state)
         missing_testing_dates_national = pd.read_json(missing_testing_dates_national)
     except Exception as e:
@@ -149,9 +155,11 @@ def update_missing_testing_data(client):
 
     df_testing_state = pd.read_csv(url_testing_state)
     df_testing_state["date"] = pd.to_datetime(df_testing_state["date"])
+    # looping to find a match with the date
     for index, row in missing_testing_dates_state.iterrows():
         date = row["date"]
         state = row["state"]
+        # insert the data according to the state
         date_mask = (df_testing_state["date"] == pd.to_datetime(date)) & (df_testing_state["state"] == state)
         if date_mask.any():
             rows = df_testing_state[date_mask]
@@ -171,6 +179,7 @@ def update_missing_testing_data(client):
     df_testing_national["date"] = pd.to_datetime(df_testing_national["date"])
     for date in missing_testing_dates_national:
         date_mask = df_testing_national["date"] == pd.to_datetime(date)
+        # same process except you skip the state part, if one true then continue
         if date_mask.any():
             rows = df_testing_national[date_mask]
             for index, row in rows.iterrows():
@@ -256,7 +265,6 @@ def consolidate_vaccination_data(ti):
     return combined_df_state, combined_df_national
 
 # get all dates from last week
-
 def get_previous_week_dates():
     today = datetime.date.today()
     start_date = today
@@ -275,9 +283,20 @@ def get_previous_week_dates():
 
     return previous_week_dates
 
+# loop to turn NaN values into None
 def make_json_serializable(records):
-    return [{k: (None if pd.isna(v) else v) for k, v in record.items()} for record in records]
+    result = []
+    for record in records:
+        cleaned_record = {}
+        for key, value in record.items():
+            if pd.isna(value):
+                cleaned_record[key] = None
+            else:
+                cleaned_record[key] = value
+        result.append(cleaned_record)
+    return result
 
+# loading data into database
 def load_data(client, ti):
     vaccination_df_state, vaccination_df_national = ti.xcom_pull(task_ids="vaccination_data_preprocessing")
     epidemic_df_state, epidemic_df_national = ti.xcom_pull(task_ids="epidemic_data_cleaning")
@@ -299,6 +318,7 @@ def load_data(client, ti):
     print(epidemic_df_national)
     print(epidemic_df_state)
 
+    # inserting rows into tables
     try:
         data, count = client.table("MalaysiaVaccination").upsert(
             vaccination_df_national[0]).execute()
