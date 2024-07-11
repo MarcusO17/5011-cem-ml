@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="699b9a5e-de87-42fc-9b3e-62b300b2069f" name="Changes" comment="">
+    <list default="true" id="324c30bd-3a9c-43e9-93db-e6da9f49509c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/model_training_kelvin.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/model_training_kelvin.ipynb" afterDir="false" />
     </list>
@@ -49,7 +49,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="699b9a5e-de87-42fc-9b3e-62b300b2069f" name="Changes" comment="" />
+      <changelist id="324c30bd-3a9c-43e9-93db-e6da9f49509c" name="Changes" comment="" />
       <created>1717250739402</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
